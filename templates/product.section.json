@@ -1,0 +1,211 @@
+{
+  "sections": {
+    "main": {
+      "type": "product-template-1",
+      "settings": {
+        "enable_hurrify": false,
+        "stock_enable": true,
+        "enable_payment_button": true,
+        "social_sharing_products": false,
+        "next_prev_enable": true,
+        "product_vendor_enable": false,
+        "product_type_enable": false,
+        "variant_sku_enable": false,
+        "variant_available_enable": false,
+        "product_selector": "radio",
+        "sizeguide_enable": true,
+        "sizeguide_title": "Size guide",
+        "sizeguide_page": "size-guide",
+        "fake_view_enable": false,
+        "fake_view_min": 12,
+        "fake_view_max": 30,
+        "fake_view_duration": 3,
+        "fake_view_text_prefix": "Currently there are",
+        "fake_view_text_suffix": "peoples are currently looking at this product",
+        "gtab_des": "Description",
+        "gtab_review_enable": false,
+        "gtab_review": "Review",
+        "positiontab": "right",
+        "enable_tabvertical": false,
+        "stab_title1": "Specific tab 1",
+        "stab_title2": "Specific tab 2",
+        "stab_title3": "Specific tab 3",
+        "stab_title4": "Specific tab 4",
+        "enable": false,
+        "mix_1": "#262626",
+        "mix_2": "#c0c0c0",
+        "text_cl": "#ffffff",
+        "cart_bg": "#b7001d",
+        "cart_cl": "#ffffff"
+      }
+    },
+    "16370551196cba43ce": {
+      "type": "image-content",
+      "blocks": {
+        "16370551191960331f-1": {
+          "type": "text_block",
+          "settings": {
+            "bgtext": "#fefefe",
+            "title": "",
+            "text": "<div class=\"px-lg-5\">\n<span class=\"subtop d-block\">WHAT LO WANTS QUALITY<\/span>\n<h3>Ethically and sustainably<\/h3>\n<br>Each WLW piece is made with integrity by our talented sewing team in Downtown Los Angeles - just 25 minutes from my apartment.<br><br> Our production team is Cintas accredited, meaning we stand for the rights of the talented garment workers we create with.<br><br>\n\nDesigned and made in Los Angeles with love.\n<\/div>",
+            "align": "left"
+          }
+        },
+        "16370551191960331f-2": {
+          "type": "image_block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/wlw_product_layout_2.png"
+          }
+        }
+      },
+      "block_order": [
+        "16370551191960331f-1",
+        "16370551191960331f-2"
+      ],
+      "settings": {
+        "animation": "",
+        "paddingsection": "60px 0px 0px 0px",
+        "paddingmobile": "60px 0px 60px 0px",
+        "marginsection": "0px 0px 0px 0px",
+        "marginmobile": "0px 0px 0px 0px",
+        "bgsection": "#fefefe",
+        "setwidth": "container",
+        "enable_padding": true,
+        "align_center": true
+      }
+    },
+    "16370565943a4ccdcf": {
+      "type": "image-content",
+      "blocks": {
+        "16370565948da2cbcb-0": {
+          "type": "image_block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/wlw_product_layout_1.png"
+          }
+        },
+        "16370565948da2cbcb-1": {
+          "type": "text_block",
+          "settings": {
+            "bgtext": "#fefefe",
+            "title": "",
+            "text": "<div class=\"px-lg-5\">\n<span class=\"subtop d-block\">organic, recycled, and natural fabrics<\/span>\n<h3>For bodies like yours and mine<\/h3>\n<br>WLW is proud to be a part of 1% for the Planet. This organization helps us donate 1% of our annual revenue to high impact environmental nonprofits of our choice. We’re committed to protecting our environment and our future. <br><br>Every time you buy WLW, not only do you have great taste in clothing but you’re contributing 1%. \n\nFor the love of mother Earth.\n<\/div>",
+            "align": "left"
+          }
+        }
+      },
+      "block_order": [
+        "16370565948da2cbcb-0",
+        "16370565948da2cbcb-1"
+      ],
+      "settings": {
+        "animation": "",
+        "paddingsection": "130px 0px 0px 0px",
+        "paddingmobile": "60px 0px 60px 0px",
+        "marginsection": "0px 0px 0px 0px",
+        "marginmobile": "0px 0px 0px 0px",
+        "bgsection": "#fefefe",
+        "setwidth": "container",
+        "enable_padding": true,
+        "align_center": true
+      }
+    },
+    "1640704650ec84c93a": {
+      "type": "image-content",
+      "blocks": {
+        "1640704650d855f575-1": {
+          "type": "text_block",
+          "settings": {
+            "bgtext": "#fefefe",
+            "title": "",
+            "text": "<div class=\"px-lg-5\">\n<span class=\"subtop d-block\">FREE FAST SHIPPING<\/span>\n<h3>Shipping cost\/time and refunds<\/h3>\n<br>For US customers, shipping takes 5 - 10 days.  In some cases, deliveries may take longer due to carrier transportation delays.<br><br>\n\nAfter placing your order you can track its progress at whatlowants.com through the link we send you in the confirmation email.\n\n<br><br>All orders come with a 30-day no-hassle return policy!\n<\/div>",
+            "align": "left"
+          }
+        },
+        "1640704650d855f575-0": {
+          "type": "image_block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Shipping_Companies_-_2.png"
+          }
+        }
+      },
+      "block_order": [
+        "1640704650d855f575-1",
+        "1640704650d855f575-0"
+      ],
+      "settings": {
+        "animation": "",
+        "paddingsection": "130px 0px 0px 0px",
+        "paddingmobile": "60px 0px 60px 0px",
+        "marginsection": "0px 0px 0px 0px",
+        "marginmobile": "0px 0px 0px 0px",
+        "bgsection": "#fefefe",
+        "setwidth": "container",
+        "enable_padding": true,
+        "align_center": true
+      }
+    },
+    "164304900889c82e46": {
+      "type": "advanced-content",
+      "blocks": {
+        "16430490076ffad147-0": {
+          "type": "html",
+          "settings": {
+            "code": "<div id=\"ddshopfaq-wrapper\"><\/div>",
+            "width": "100%",
+            "align": "auto"
+          }
+        }
+      },
+      "block_order": [
+        "16430490076ffad147-0"
+      ],
+      "settings": {
+        "animation": "",
+        "paddingsection": "130px 0px 0px 0px",
+        "paddingmobile": "60px 0px 60px 0px",
+        "marginsection": "0px 0px 0px 0px",
+        "marginmobile": "0px 0px 0px 0px",
+        "zindex": "0",
+        "bgsection": "#fefefe",
+        "rangebg": 50,
+        "bgbefore": "rgba(0,0,0,0)",
+        "title_top": "",
+        "title": "<p align=\"left\">Frequently Asked Questions<\/p>",
+        "des": "",
+        "setwidth": "container",
+        "padding": true
+      }
+    },
+    "163705659916a9ca02": {
+      "type": "product-list",
+      "settings": {
+        "animation": "",
+        "paddingsection": "130px 0px 0px 0px",
+        "paddingmobile": "60px 0px 60px 0px",
+        "marginsection": "0px 0px 0px 0px",
+        "marginmobile": "0px 0px 0px 0px",
+        "bgsection": "#ffffff",
+        "setwidth": "container",
+        "title_top": "",
+        "title": "<p align=\"left\">You might also like<\/p>",
+        "des": "",
+        "collection": "shop-all",
+        "arrows": true,
+        "draggable": true,
+        "dots": true,
+        "infinite": true,
+        "rows": "1",
+        "limit": 10,
+        "show": 5
+      }
+    }
+  },
+  "order": [
+    "main",
+    "16370551196cba43ce",
+    "16370565943a4ccdcf",
+    "1640704650ec84c93a",
+    "164304900889c82e46",
+    "163705659916a9ca02"
+  ]
+}

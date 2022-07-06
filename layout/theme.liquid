@@ -1,0 +1,118 @@
+<!doctype html>
+<html class="no-js " lang="{{ shop.locale }}">
+
+<head>
+    
+
+  
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="theme-color" content="{{ settings.color_header_bg }}">
+    <meta name="google-site-verification" content="ecCahmN7EM5o_BMRaS_mp1iuSRqKsK1jNXZkXOWPVXc" />
+    {%- if settings.favicon != blank -%}
+    <link rel="shortcut icon" href="{{ settings.favicon | img_url: '32x32' }}" type="image/png">
+    {%- endif -%}
+    <link rel="canonical" href="{{ canonical_url }}">
+    <title>
+      {{ page_title }}{% if current_tags %}{% assign meta_tags = current_tags | join: ', ' %} &ndash; {{ 'general.meta.tags' | t: tags: meta_tags }}{% endif %}{% if current_page != 1 %} &ndash; {{ 'general.meta.page' | t: page: current_page }}{% endif %}{% unless page_title contains shop.name %} &ndash; {{ shop.name }}{% endunless %}
+    </title>
+  {% include "win_ads" %}
+
+  
+
+    {%- if page_description -%}
+    <meta name="description" content="{{ page_description | escape }}">
+    {%- endif -%}
+    {%- include 'social-meta-tags' -%}
+    {%- include 'header-css' -%}
+    {{ content_for_header }}
+    
+  {% include 'ufe-offer' %}  
+  {% include 'judgeme_core' %}
+{% include 'sd-icon-prototype' %} 
+{% render 'gsf-conversion-pixels' %}
+
+{% if template contains 'faq'%}{{ 'ddshop-faq.css' | asset_url | stylesheet_tag }}{% endif %}
+<script defer>
+  /* >> TriplePixel :: start*/
+  ~function(W,H,A,L,E){try{A.setItem(H,1+(0|A.getItem(H)||0)),W.includes("⇈")&&A.setItem(H+"Stg",1+(0|A.getItem(H+"Stg")||0))}catch(e){}function O(T,R){void 0===R&&(R=!1),H=new XMLHttpRequest,H.open("GET","//triplewhale-pixel.web.app/triplepx.txt?"+~(Date.now()/9e7),!0),H.send(null),H.onreadystatechange=function(){4===H.readyState&&200===H.status?setTimeout(function(){return eval(H.responseText)},50):(299<H.status||H.status<200)&&T&&!R&&(R=!0,O(T-1))}}A=window,A[H]||(L=function(){return"tp.."+Date.now().toString(36)+Math.random().toString(36)},E=A[H]=function(t,e,n){return W=L(),(E._q=E._q||[]).push([W,e,n]),W},E.ch=W,O(5))}("","TriplePixel",localStorage);
+  /* << TriplePixel :: end*/
+  </script>
+  <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-T397ZXS');</script>
+  <!-- End Google Tag Manager --> 
+</head>
+  
+<body class="template-{{ template | replace: '.', ' ' | truncatewords: 1, '' | handle }} body-theme {% if settings.productpage == 'product-2' or settings.productpage == 'product-6' or settings.productpage == 'product-7' %} product-hide-breadcrumb {% endif %}" >
+    {%- section 'announcement-bar' -%}
+    {%- include 'loading' -%}
+    {%- include 'header' -%}
+    <div class="page-container page-element is-moved-by-drawer">
+      {%- include 'breadcrumb' -%}
+      <main class="main-content" id="MainContent" role="main">
+        {%- if settings.enable_animationscroll -%}<div id ="js-scroll">{% endif%}
+          {%- if settings.enable_animationscroll -%}<div data-scroll-section>{% endif%}
+        {%- include 'slideshow' -%}
+        {%- if settings.enable_animationscroll -%}</div>{% endif%}
+        {{ content_for_layout }}
+        {%- if settings.enable_animationscroll -%}</div>{% endif%}
+      </main>
+      {%- include 'footer' -%}
+      {%- include 'popup-newsletter' -%}
+      {%- section 'product-suggest' -%}
+      {%- section 'recently-viewed' -%}
+    </div>
+    {%- include 'cookie-policy' -%}
+    {%- include 'back-to-top' -%}
+    {%- include 'menu-mobile' -%}
+    {%- include 'notify-popup' -%}
+    {%- include 'bottom-contents' -%}
+    {%- include 'quickview' -%}
+    {%- include 'popup-compare' -%}
+    {%- include 'header-js' -%}
+    {%- if settings.show_multiple_currencies -%}
+    {{ "/services/javascripts/currencies.js" | script_tag }}
+    {%- endif -%}
+  {% render 'preorder-now' %}
+  <!--Gorgias Chat Widget Start--><script defer id="gorgias-chat-widget-install-v2" src="https://config.gorgias.chat/gorgias-chat-bundle-loader.js?applicationId=12703"></script>
+<script defer id="gorgias-chat-shopify-install">!function(_){_.SHOPIFY_PERMANENT_DOMAIN="{{shop.permanent_domain}}",_.SHOPIFY_CUSTOMER_ID="{{customer.id}}",_.SHOPIFY_CUSTOMER_EMAIL="{{customer.email}}"}(window||{});</script><!--Gorgias Chat Widget End-->
+<script src='{{ 'ddshop-faq.js' | asset_url }}' defer='defer'></script>
+<script src='{{ 'ddshop-custom.js' | asset_url }}' defer='defer'></script>
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T397ZXS"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+  <!-- Begin Shopify-Afterpay JavaScript Snippet (v1.0.10) -->
+<script defer type="text/javascript">
+  // Overrides:
+  // var afterpay_min = 0.04;            // As per your Afterpay contract.
+  // var afterpay_max = 2000.00;         // As per your Afterpay contract.
+  // var afterpay_cbt_enabled = false;   // As per your Afterpay contract; change to true to display Cross-Border Trade artwork (for AU/NZ).
+  // var afterpay_logo_theme = 'colour'; // Can be 'colour', 'black' or 'white'.
+  // var afterpay_product_selector = '#product-price-selector';
+  // var afterpay_cart_integration_enabled = true;
+  // var afterpay_cart_static_selector = '#cart-subtotal-selector';
+  
+  // Non-editable fields:
+  var afterpay_shop_currency = {{ shop.currency | json }};
+  var afterpay_cart_currency = {{ cart.currency.iso_code | json }};
+  var afterpay_shop_money_format = {{ shop.money_format | json }};
+  var afterpay_shop_permanent_domain = {{ shop.permanent_domain | json }};
+  var afterpay_theme_name = {{ theme.name | json }};
+  var afterpay_product = {{ product | json }};
+  var afterpay_current_variant = {{ product.selected_or_first_available_variant | json }};
+  var afterpay_cart_total_price = {{ cart.total_price | json }};
+  var afterpay_js_snippet_version = '1.0.10';
+  </script>
+  <script defer type="text/javascript" src="https://static.afterpay.com/shopify-afterpay-javascript.js"></script>
+  <!-- End Shopify-Afterpay JavaScript Snippet (v1.0.10) -->
+</body>
+</html>
+
+
